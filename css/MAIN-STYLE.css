@@ -1,0 +1,397 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100..900&display=swap');
+@import url( "../fonts/stylesheet.css");
+
+a {
+  color: rgba(2, 2, 2, 1.00);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7F7F7F;
+}
+
+body {
+  background-color: #E5E5E5;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto", Gotham, "Oswald", Helvetica, Arial, "Montserrat";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+	  
+}
+
+p { 
+  line-height: 1.25rem;
+	
+	
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", "Montserrat", Cambria, "Roboto", Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+.font-special {
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+/*---- Color styles ----------*/
+.bg-primary { background-color: #171717; }
+.bg-primary-1 { background-color: aliceblue; }
+.text-primary { color: #393939; }
+.text-light { color: #F4F4F4; }
+.text-dark { color: #000000; }
+
+/*--- Button style */
+.btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6c757d, #f0f0f0); /* Gradient từ xám sang trắng nhẹ */
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Để nút có bóng nhẹ */
+  transition: background 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển màu và chuyển động */
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5a6268, #e0e0e0); /* Gradient đậm hơn khi hover */
+  transform: translateY(-2px); /* Thêm hiệu ứng chuyển động nhẹ khi hover */
+}
+
+/* Grid system */
+* { box-sizing: border-box; }
+
+.col-1 { width: 8.33333%; }
+.col-2 { width: 16.66667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33333%; }
+.col-5 { width: 41.66667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33333%; }
+.col-8 { width: 66.66667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33333%; }
+.col-11 { width: 91.66667%; }
+.col-12 { width: 100%; }
+
+@media (min-width: 600px) {
+  .col-md-1 { width: 8.33333%; }
+  .col-md-2 { width: 16.66667%; }
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.33333%; }
+  .col-md-5 { width: 41.66667%; }
+  .col-md-6 { width: 50%; }
+  .col-md-7 { width: 58.33333%; }
+  .col-md-8 { width: 66.66667%; }
+  .col-md-9 { width: 75%; }
+  .col-md-10 { width: 83.33333%; }
+  .col-md-11 { width: 91.66667%; }
+  .col-md-12 { width: 100%; }
+}
+
+@media (min-width: 1880px) {
+  .col-lg-1 { width: 8.33333%; }
+  .col-lg-2 { width: 16.66667%; }
+  .col-lg-3 { width: 25%; }
+  .col-lg-4 { width: 33.33333%; }
+  .col-lg-5 { width: 41.66667%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-7 { width: 58.33333%; }
+  .col-lg-8 { width: 66.66667%; }
+  .col-lg-9 { width: 75%; }
+  .col-lg-10 { width: 83.33333%; }
+  .col-lg-11 { width: 91.66667%; }
+  .col-lg-12 { width: 100%; }
+}
+
+[class*="col-"] {
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.img-100 {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Spacing styles */
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+.mt-5 { margin-top: 24px; }
+.mt-6 { margin-top: 72px; }
+
+.mb-1 { margin-bottom: 4px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-3 { margin-bottom: 12px; }
+.mb-4 { margin-bottom: 16px; }
+.mb-5 { margin-bottom: 24px; }
+.mb-6 { margin-bottom: 72px; }
+
+.font-Bruh {
+  font-family: "Oswald", sans-serif;
+}
+
+.font-Dep {
+  font-family: "Roboto", sans-serif;
+	color: #3F3F3F
+}
+
+.font-moi {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-decor {
+  text-decoration: none;
+}
+
+.ss-icon i {
+  margin: 5px;
+}
+
+/* Navbar styles */
+nav {
+  padding: 10px 0;
+}
+
+nav .container {
+  position: relative;
+}
+
+nav .nav-brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+nav .btn-toggle {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  cursor: pointer;
+  background: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#menu {
+  margin-top: 10px;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  position: relative;
+}
+
+#menu ul li a {
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/*#menu {display: none;}*/
+
+#dropdown-menu a {
+    margin-left: 0; /* Loại bỏ margin trái */
+    width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+    text-align: left; /* Căn chỉnh chữ sang trái */
+}
+#dropdown-menu {
+    display: none; /* Menu thả xuống ban đầu bị ẩn */
+}
+
+@media (min-width: 992px) {
+    #menu {
+        display: flex !important; /* Menu hiển thị trên các thiết bị lớn hơn 992px */
+    }
+    nav .btn-toggle {
+        display: none;
+    }
+    nav .container, #menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #menu ul li a {
+        border: none;
+    }
+    #dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background: #E5E5E5;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #dropdown-menu a {
+        margin-left: 0; /* Loại bỏ margin trái cho items con */
+        width: 100%; /* Đảm bảo chiều rộng bằng với menu gốc */
+        text-align: left; /* Căn chỉnh sang trái */
+    }
+}
+    /* Project he*/
+  
+
+
+.container,
+.row,
+.col-12,
+.col-md-6,
+.col-lg-4,
+.col-md-12,
+.col-lg-7 {
+  border: none !important;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h4 {
+  margin-top: 10px;
+  font-size: 1.25em;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.project-card .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6c757d, #f0f0f0); /* Gradient từ xám sang trắng nhẹ */
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Để nút có bóng nhẹ */
+  transition: background 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển màu và chuyển động */
+}
+
+.project-card .btn-primary:hover {
+  background: linear-gradient(135deg, #5a6268, #e0e0e0); /* Gradient đậm hơn khi hover */
+  transform: translateY(-2px); /* Thêm hiệu ứng chuyển động nhẹ khi hover */
+}
+/* Container for skill bars */
+.skill-container {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Skill name styling */
+.skill-name {
+  margin: 0 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Progress bar container */
+.progress-bar {
+  width: 100%;
+  background: #d6d6d6; /* Light gray for the background */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  height: 20px;
+}
+
+/* Active progress */
+.progress {
+  height: 100%;
+  background: #808080; /* Gray for the progress bar */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.5s ease;
+}
+
+/* Ensure percentage text stays centered */
+.progress span {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+}
+.td-trang{ 
+	max-height: 200px; background:#171717
+	
+}
+.font-td{
+	font-family: "Roboto";
+	color:aliceblue
+		
+}
